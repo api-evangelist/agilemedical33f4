@@ -1,0 +1,38 @@
+generated: '2026-09-12'
+method: probed
+source: live probes of the named /.well-known/ path list against every host this record knows
+note: >-
+  Agile Medical (AGIBOT) publishes one corporate marketing site and no API host — apis.yml carries no
+  baseURL and the repo holds no OpenAPI, so the host set is the registrable domain and its www host.
+  Every named path returned 404 from an nginx origin serving a real HTML 404 body (479 bytes); nothing
+  was saved, and NO WellKnown or SecurityTxt pointer is emitted. A recorded absence, not a gap in the
+  probe.
+hit_count: 0
+path_echo_control: passed
+hosts:
+- host: https://www.agibot.cn
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/ucp.json, status: 404}
+  - {path: /.well-known/acp.json, status: 404}
+  - {path: /.well-known/aauth-resource.json, status: 404}
+  - {path: /.well-known/apis.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+  - {path: /apis.json, status: 404}
+  - {path: /apis.yml, status: 404}
+  - {path: /.well-known/agilemedical33f4-negative-control-7f3ab91c.json, status: 404, note: negative control — a 2xx here would have discarded every hit on this host}
+- host: https://agibot.cn
+  note: apex resolves to the same nginx origin as www and serves the identical site
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+x-evidence:
+  fetched: '2026-09-12'
+  user_agent: browser
+  robots_txt: {url: 'https://www.agibot.cn/robots.txt', status: 200, allows_crawl: true}

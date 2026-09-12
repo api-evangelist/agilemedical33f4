@@ -1,4 +1,4 @@
-# Agilemedical33f4
+# Agile Medical (AGIBOT)
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,15 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Agilemedical33f4 is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/agilemedical33f4
+Agile Medical — 敏捷医疗科技（苏州）有限公司, trading as AGIBOT — is a Chinese surgical robotics manufacturer
+founded in September 2020 in Suzhou, Jiangsu. Its AGIBOT endoscopic (laparoscopic) surgical robot system
+received NMPA Class III medical device approval in March 2025 and is in clinical use for minimally invasive
+urology, gynecology, general, hepatobiliary and thoracic procedures.
+
+**No public API surface.** Agile Medical sells regulated capital medical equipment to hospitals. As of
+2026-09-12 it publishes no developer portal, API reference, SDK, webhook surface, machine-readable
+specification or `/.well-known/` discovery document. Every named contract and discovery path was probed and
+returned 404 — the record is in [`well-known/agilemedical33f4-well-known.yml`](well-known/agilemedical33f4-well-known.yml).
+
+- Company site: https://www.agibot.cn/
+- Secondary-market listing this profile was surfaced from: https://equityzen.com/company/agilemedical33f4

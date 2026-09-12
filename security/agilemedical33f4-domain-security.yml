@@ -1,0 +1,43 @@
+generated: '2026-09-12'
+method: probed
+source: live DNS/TLS/HTTP probes of the apis.yml Website host (www.agibot.cn) and its apex
+note: >-
+  The mechanical probe (0-working/probe-domain-security.py) recorded https:false for www.agibot.cn,
+  which is a false negative — the origin in Suzhou is slow and intermittently drops non-browser
+  requests from this vantage point. Re-probed by hand with curl and openssl s_client: the host
+  serves HTTP/2 over TLSv1.3 with HSTS. The values below are the observed ones.
+hosts:
+- host: www.agibot.cn
+  https: true
+  http_status: 200
+  http_version: h2
+  tls_version: TLSv1.3
+  cert_issuer: "Let's Encrypt (CN=YR2)"
+  cert_subject: CN=www.agibot.cn
+  cert_not_before: '2026-08-07'
+  cert_not_after: '2026-11-05'
+  hsts: true
+  hsts_max_age: 31536000
+  hsts_include_subdomains: false
+  hsts_preload: false
+  server: nginx
+  alt_svc: h3
+- host: agibot.cn
+  https: true
+  http_status: 200
+  note: apex serves the same site as www
+domains:
+- domain: agibot.cn
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false
+  ns: [dns15.hichina.com, dns16.hichina.com]
+  a: [121.41.170.158]
+x-evidence:
+  fetched: '2026-09-12'
+  probes:
+  - {url: 'https://www.agibot.cn/', method: HEAD, status: 200}
+  - {url: 'https://agibot.cn/', method: GET, status: 200}
+  - {check: tls, host: www.agibot.cn, result: TLSv1.3}
+  - {check: hsts, host: www.agibot.cn, header: 'strict-transport-security: max-age=31536000'}
