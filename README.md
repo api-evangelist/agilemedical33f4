@@ -1,4 +1,4 @@
-# Agile Medical (AGIBOT)
+# Agile Medical
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,15 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Agile Medical — 敏捷医疗科技（苏州）有限公司, trading as AGIBOT — is a Chinese surgical robotics manufacturer
-founded in September 2020 in Suzhou, Jiangsu. Its AGIBOT endoscopic (laparoscopic) surgical robot system
-received NMPA Class III medical device approval in March 2025 and is in clinical use for minimally invasive
-urology, gynecology, general, hepatobiliary and thoracic procedures.
+Agile Medical — 敏捷医疗科技（苏州）有限公司, trading under the AGIBOT brand — is a Chinese surgical robotics manufacturer founded in September 2020 and headquartered in Suzhou, Jiangsu, with R&D offices in the Suzhou Industrial Park Dushu Lake innovation district and Shanghai Zhangjiang. Its flagship AGIBOT endoscopic (laparoscopic) surgical robot system pairs a surgeon console, an eight-degree-of-freedom patient-side platform and an imaging processing platform that ingests third-party ultrasound, CT and endoscopic sources. The system received NMPA Class III medical device approval in March 2025 and is in clinical use for minimally invasive urology, gynecology, general, hepatobiliary and thoracic procedures. The company closed a several-hundred-million-RMB Series B in October 2025. It sells regulated capital equipment to hospitals and publishes no public API, developer portal, SDK or machine-readable specification.
 
-**No public API surface.** Agile Medical sells regulated capital medical equipment to hospitals. As of
-2026-09-12 it publishes no developer portal, API reference, SDK, webhook surface, machine-readable
-specification or `/.well-known/` discovery document. Every named contract and discovery path was probed and
-returned 404 — the record is in [`well-known/agilemedical33f4-well-known.yml`](well-known/agilemedical33f4-well-known.yml).
+**Areas:** Company · Surgical Robotics · Medical Devices · Robotics · Healthcare · Minimally Invasive Surgery · Medical Imaging · Artificial Intelligence · China
 
-- Company site: https://www.agibot.cn/
-- Secondary-market listing this profile was surfaced from: https://equityzen.com/company/agilemedical33f4
+## Agile Medical on APIs.io
+
+Everything profiled for Agile Medical is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/agilemedical33f4/](https://apis.io/providers/agilemedical33f4/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Agilemedical33F4 Domain Security](https://apis.io/security/agilemedical33f4/agilemedical33f4-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.agibot.cn/)
+- [Support](https://www.agibot.cn/contact.html)
+- [Blog](https://www.agibot.cn/mjdt.html)
+- [Terms of service](https://www.agibot.cn/legal.html)
+- [Privacy policy](https://www.agibot.cn/privacy.html)
+
+## API Evangelist rating
+
+**Kin Score 10.9** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.3** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/agilemedical33f4/](https://apis.io/providers/agilemedical33f4/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Agile Medical: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/agilemedical33f4/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
